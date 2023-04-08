@@ -1,0 +1,265 @@
+h1 {
+    text-align: center;
+    color: #FEFAE0;
+}
+
+ul {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1cm;
+    list-style-type: circle;
+}
+
+p {
+    line-height: 8mm;
+
+}
+
+hr {
+    background-color: #D4A373;
+    height: 3px;
+    border: none;
+}
+
+header {
+    margin: 0px;
+    padding: 5px;
+    background-color: #D4A373;
+    font-size: 30px;
+    font-family: 'La Belle Aurore', cursive;
+    letter-spacing: 2px;
+}
+
+body {
+    margin: 0px;
+    background-color: #FAEDCD;
+    border: #D4A373;
+}
+
+main {
+    padding: 100px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 10px;
+    /*border-radius: 10px;*/
+    background-color: #FEFAE0;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.side {
+    float: right;
+    width: 73%;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    background-color: #D4A373;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*進度條*/
+.skill {
+    width: 160px;
+    height: 160px;
+    /*background-color: aquamarine;*/
+    position: relative;
+}
+
+.outer {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    padding: 8px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px -1px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+}
+
+#number {
+    font-weight: 600px;
+    color: black;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 365;
+    stroke-dashoffset: 365;
+    animation: anim1 2s linear forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 73;
+    }
+}
+
+.cir70 {
+    animation: anim2 2s linear forwards;
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 109.5;
+    }
+}
+
+.cir82 {
+    animation: anim3 2s linear forwards;
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 65.7;
+    }
+}
+
+.cir50 {
+    animation: anim4 2s linear forwards;
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 180;
+    }
+}
+
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+}
+
+
+
+
+/*排版陣列*/
+.array {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.array-1 {
+    display: flex;
+
+
+}
+
+.skilltxt {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 50px;
+}
+
+.right {
+    float: right;
+    padding: 20px;
+}
+
+/*圖片排列*/
+.array-a {
+    width: 90%;
+
+    display: flex;
+
+}
+
+.array-a1 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+
+
+.item {
+    margin: 5px 25px;
+    width: 33%;
+}
+
+.title {
+    text-align: center;
+    color: black;
+}
+
+/*圖片轉換動畫*/
+#frame {
+    width: 350px;
+    height: 300px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#frame .photos {
+    width: 1050px;
+    height: 300px;
+    animation: move 15s ease infinite;
+}
+
+#frame .photos img {
+    width: 350px;
+    height: 300px;
+    float: left;
+}
+
+@keyframes move {
+
+    0%,
+    33% {
+        margin-left: 0;
+    }
+
+    33%,
+    66% {
+        margin-left: -350px;
+    }
+
+    66%,
+    99% {
+        margin-left: -700px;
+    }
+}
